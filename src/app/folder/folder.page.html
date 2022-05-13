@@ -1,0 +1,85 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>{{ folder }}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">{{ folder }}</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div id="container">
+    <strong class="capitalize">{{ folder }}</strong>
+    <p>Explore <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+  </div>
+</ion-content>
+
+<div class="container">
+
+  <!-- Outer Row -->
+  <div class="row justify-content-center">
+
+      <div class="col-xl-10 col-lg-12 col-md-9">
+
+          <div class="card o-hidden border-0 shadow-lg my-5">
+              <div class="card-body p-0">
+                  <!-- Nested Row within Card Body -->
+                  <div class="row">
+                      <div class="col-lg-6 d-none d-lg-block bg-login-image"></div>
+
+                      <div class="col-lg-6">
+                          <div class="p-5">
+
+                              <div class="text-center">
+                                  <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <path d="M98 49.6832C98 76.0059 76.5217 97.3664 50 97.3664C23.4783 97.3664 2 76.0059 2 49.6832C2 23.3605 23.4783 2 50 2C76.5217 2 98 23.3605 98 49.6832Z" fill="white" stroke="black" stroke-width="4"/>
+                                      <path d="M53.4262 9.70069C53.4262 11.7779 52.6017 12.7555 51.0705 12.5111C50.3048 12.3889 49.5392 12.6944 49.3036 13.2442C49.068 13.733 48.4791 15.1382 47.9491 16.299C47.419 17.4598 46.3589 19.9036 45.5344 21.7365C44.651 23.5694 44.0031 25.2801 44.0031 25.5855C44.0031 25.8299 43.1197 28.0294 42.0007 30.4732C40.9406 32.917 39.4094 36.4605 38.6438 38.2934C37.937 40.1263 36.9947 42.0813 36.5236 42.6312C35.2868 44.2197 35.5813 44.6473 39.7628 46.6635C45.3577 49.4128 45.2399 49.4128 46.3589 45.9303C47.5957 42.0813 48.008 40.9816 49.1858 38.1712C50.0104 36.3383 50.3637 36.0329 51.2471 36.5216C51.8361 36.8882 53.544 37.0715 55.0753 36.9493C58.0789 36.766 58.7267 37.1326 62.3193 40.9816C65.9707 44.8917 66.0885 50.2681 62.4959 55.0947L60.5524 57.7829L62.5548 59.9212L64.4983 62.0596L66.3829 59.799C69.9166 55.5834 70.7411 53.2007 70.8 47.4577C70.8 42.3257 69.5632 37.6824 68.1498 37.6824C67.7964 37.6824 67.5608 37.377 67.5608 37.0715C67.5608 36.1551 64.7339 33.528 62.6137 32.3671C61.3769 31.6951 60.8469 31.634 60.4935 32.1838C60.258 32.6115 59.9046 32.0617 59.669 30.9008C59.2568 28.7625 57.2543 26.0743 56.0176 26.0743C54.4863 26.0743 54.5452 24.7302 56.312 20.8812C58.3733 16.4212 58.55 15.3826 57.2543 14.8327C56.0176 14.3439 56.1354 12.8166 57.5488 12.0223C59.1979 11.1059 59.0212 10.4949 56.7243 9.33411C54.0741 8.05111 53.4262 8.1122 53.4262 9.70069Z" fill="black"/>
+                                      <path d="M26.9236 56.0111C26.9236 57.1719 27.3359 57.233 32.2241 57.233C36.5234 57.233 37.5246 57.4163 37.5246 58.1495C37.5246 58.6382 37.8191 59.0659 38.1135 59.0659C38.4669 59.0659 38.7025 61.3875 38.7025 64.87V70.6741H34.2854C30.5751 70.6741 29.7506 70.8573 29.515 71.7127C28.8083 74.1565 26.0402 79.9606 25.3335 80.5715C24.9212 80.9381 24.5679 81.4269 24.5679 81.7324C24.5679 82.0378 35.5811 82.2822 49.4801 82.2822C69.0919 82.2211 74.1568 82.0989 73.4501 81.488C72.2133 80.4494 70.152 76.2949 69.3864 73.2401L68.6797 70.6741H65.2049C63.2614 70.6741 61.6712 70.4908 61.6712 70.1853C61.6712 69.9409 60.0811 69.7576 58.1376 69.7576C56.1941 69.7576 54.6039 69.9409 54.6039 70.1853C54.6039 70.4908 51.5414 70.6741 47.8311 70.6741H41.0583V64.87C41.0583 61.3875 41.2938 59.0659 41.6472 59.0659C42.0006 59.0659 42.2361 58.6382 42.2361 58.1495C42.2361 57.6607 42.5306 57.233 42.8251 57.233C43.1785 57.233 43.414 56.6832 43.414 56.0111C43.414 54.8503 43.0018 54.7892 35.1688 54.7892C27.3359 54.7892 26.9236 54.8503 26.9236 56.0111Z" fill="black"/>
+                                      <path d="M55.0749 59.3714C52.3658 61.2653 51.718 63.7702 53.2492 66.5806C54.6038 68.9023 56.6062 69.7576 59.492 69.2077C61.0821 68.9023 61.9067 68.2913 62.5545 67.0083C64.2624 63.5869 63.4968 60.3489 60.4932 58.7604C58.1963 57.5385 57.6074 57.5996 55.0749 59.3714Z" fill="black"/>
+                                  </svg>
+                                  <h1 class="h4 text-gray-900 mb-4">Login</h1>
+                              </div>
+
+                              <form class="user" [formGroup]="loginForm" (ngSubmit)="onLogin()">
+                                  <div class="form-outline mb-4">
+                                      <input type="text" class="form-control"
+                                          formControlName = "email"
+                                          placeholder="Email">
+                                  </div>
+                                  <div class="form-outline mb-4">
+                                      <input type="password" class="form-control"
+                                          formControlName = "pwd" placeholder="Password">
+                                          <p class="small"><a class="small" routerLink="/forgotpwd">Forgot Password?</a></p>
+
+                                  </div>
+                              
+                              
+                                  <div class="form-group">
+                                      <button type="submit" class="w-100 btn btn-primary btn-lg"> Sign in</button>
+                                      <!--
+                                      <a type="submit" class="w-100 btn btn-primary btn-lg" routerLink="/user/home">Sign in</a>
+                                      -->
+                                  </div> 
+
+                              </form>
+                          
+                              <div class="text-center">
+                                 <p class="small"> Not a member? <a class="small" routerLink="/signup">Register</a> </p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+      </div>
+
+  </div>
+
+</div>

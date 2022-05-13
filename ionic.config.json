@@ -1,0 +1,7 @@
+{
+  "name": "farm",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
