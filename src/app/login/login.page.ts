@@ -20,7 +20,7 @@ export class LoginPage implements OnInit {
   login(){
     //Enabling Side Menu
     this.util.setMenuState(true);
-    this.navCAtrl.navigateRoot('home', { animationDirection: 'forward'});
+    this.navCAtrl.navigateRoot('folder/Inbox', { animationDirection: 'forward'});
   }
 
 }
