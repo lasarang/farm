@@ -5,15 +5,15 @@
     <div class="form-container">
       <ion-item>
         <ion-label position="floating">Email</ion-label>
-        <ion-input></ion-input>
+        <ion-input [(ngModel)]="email"></ion-input>
       </ion-item>
 
       <ion-item>
         <ion-label position="floating">Password</ion-label>
-        <ion-input type="password"></ion-input>
+        <ion-input type="password" [(ngModel)]="pwd"></ion-input>
       </ion-item>
 
-      <ion-button expand="block" class="main-button" (click)="login()">
+      <ion-button expand="block" class="main-button" (click)="onLogin(this.email, this.pwd)">
         Sign in
       </ion-button>
       
